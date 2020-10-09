@@ -1,0 +1,19 @@
+ORG 100			;T his program calculate square of number X
+	INPUT        
+	STORE X
+	STORE Y
+LABEL1, LOAD ANS
+        ADD X
+	STORE ANS
+	LOAD Y
+	SUBT ONE
+	STORE Y
+	SKIPCOND 400
+	JUMP LABEL1
+	LOAD ANS
+	OUTPUT
+	HALT
+X,	DEC 01
+Y, 	DEC 00
+ANS, 	DEC 00
+ONE,	DEC 01 
